@@ -7,9 +7,9 @@ public class PremotionExample {
 		int intValue = byteValue;
 		System.out.println(intValue);
 		
-		char charValue = '°¡';
+		char charValue = 'ê°€ê°€ê°€ê°€';
 		intValue = charValue;
-		System.out.println("°¡ÀÇ À¯´ÏÄÚµå=" + intValue);
+		System.out.println("ë‚˜ë‚˜ë‚˜" + intValue);
 		
 		intValue = 500;
 		long longValue = intValue;

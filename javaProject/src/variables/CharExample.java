@@ -3,15 +3,15 @@ package variables;
 public class CharExample {
 
 	public static void main(String[] args) {
-		char c1 = 'A';          //¹®ÀÚ¸¦ Á÷Á¢ ÀúÀå
-		char c2 = 65;           //10Áø¼ö·Î ÀúÀå
-		char c3 = '\u0041';     //16Áø¼ö·Î ÀúÀå
+		char c1 = 'A';          //ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		char c2 = 65;           //10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		char c3 = '\u0041';     //16ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		
-		char c4 ='°¡';          //¹®ÀÚ¸¦ Á÷Á¢ ÀúÀå
-		char c5 = 44032;       //10Áø¼ö·Î ÀúÀå
-		char c6 = '\uac00';    //16Áø¼ö·Î ÀúÀå
+		char c4 ='ê°€';          //ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		char c5 = 44032;       //10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		char c6 = '\uac00';    //16ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		
-		int uniCode = c1;      //À¯´ÏÄÚµå ¾ò±â
+		int uniCode = c1;      //ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ ï¿½ï¿½ï¿½
 		
 		System.out.println(c1);
 		System.out.println(c2);
@@ -21,7 +21,7 @@ public class CharExample {
 		System.out.println(c6);
 		System.out.println(uniCode);
 		
-		String name = "¼º´Ù¿µ";
+		
 		
 	}
 
