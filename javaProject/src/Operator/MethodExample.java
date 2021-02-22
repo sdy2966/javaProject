@@ -12,6 +12,7 @@ public class MethodExample {
 		System.out.println(result4);
 		
 		printAge(25);
+		
 	}
 	
 	
