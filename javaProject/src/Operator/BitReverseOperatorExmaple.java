@@ -18,12 +18,12 @@ public class BitReverseOperatorExmaple {
 		System.out.println(toBinaryString(v5) + " (십진수: " + v5 +")");
 		System.out.println(toBinaryString(v6) + " (십진수: " + v6 +")");
 		
-		public static String toBinaryString(int value) {
-			String str = Integer.toBinaryString(value);
-			while(str.length() < 32) {
-				str = "0" + str;
-			}	
-		    return str;
+	public static String toBinaryString(int value) {
+		String str = Integer.toBinaryString(value);
+		while(str.length() < 32) {
+			str = "0" + str;
+		}	
+		return str;
 			
 		}
 	}
