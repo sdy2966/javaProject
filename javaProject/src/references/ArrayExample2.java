@@ -15,7 +15,7 @@ public class ArrayExample2 {
 				sum = ary[i];
 			}
 		}
-		System.out.println();
+		
 	}
 
 }
