@@ -1,10 +1,11 @@
 package controls;
 
-public class IfElseExample {
+public class IfElseExample2 {
 	public static void main(String[] args) {
-		String grade = "F";
-		int score = 86;
-
+		int score = (int)(Math.random()*100)+1;
+		 
+		String grade;
+		
 		if (score >= 90) {		
 			if (score >= 95) {
 				grade = "A+";
@@ -18,13 +19,13 @@ public class IfElseExample {
 					grade = "B";
 				}
 		} else if (score >= 70) {
-			
 			if (score >= 75) {
 				grade = "C+";
 			}	else {
 					grade = "C";
 				}
 		} else {
+			grade = "D";
 		}
 
 		System.out.println("점수 " + score + "는 " + grade + "입니다");
