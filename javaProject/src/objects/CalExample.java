@@ -4,7 +4,7 @@ public class CalExample {
 	public static void main(String[] args) {
 //		System.out.println(getSum(40, 50));
 //		System.out.println(getAverage(49,50));
-		Student2 s = new Student2("박소연", 87,92);
+		Student2 s = new Student2("소연", 87,92);
 		showInfo(s);
 	}
 	
