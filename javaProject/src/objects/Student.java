@@ -8,7 +8,8 @@ public class Student {
 		int eng;
 		
 		//*생성자*: 필드값을 초기화.
-		Student() {
+		public Student() {
+			System.out.println("d");
 			
 		}
 		Student(String studentNo) {
@@ -22,13 +23,13 @@ public class Student {
 		}
 		
 		//기능을 담당하는 (ㅁ[소드)
-		void study() { 
+		public void study() { 
 			System.out.println("공부함");
 		}
-		void run() {
+		public void run() {
 			System.out.println("운동함");
 		}
-		void introduce() {
+		public void introduce() {
 			System.out.println("학번: " + studentNo + ", 학년: " + grade);
 			System.out.println("영어: "+ eng + "수학: " + math);
 		}
