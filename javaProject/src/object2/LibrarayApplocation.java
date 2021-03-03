@@ -14,7 +14,7 @@ public class LibrarayApplocation {
 			System.out.println("1)도서정보등록  2) 회원정보등록   3) 도서대여  4) 도서반납  5) 대여도서목록  9) 종료");
 			System.out.println("---------------------------------------------------------------------");
 			System.out.print("선택> ");
-			int selectNo = Scanner.nextInt();
+			int selectNo = scn.nextInt();
 			if (selectNo != 1 && booklist == null) {
 				System.out.println("도서정보를 먼저 등록하시오.");
 				System.out.println();
@@ -26,7 +26,7 @@ public class LibrarayApplocation {
 					
 				}
 			}else if (selectNo ==2) {
-				for (int i=0; i<.length; i++) {
+				for (int i=0; i< booklist.length; i++) {
 					System.out.println("");
 					
 				}
