@@ -2,6 +2,6 @@ package object2;
 
 public class Account1 {
 	public 
-	ぁ百皋家靛
+	百皋家靛
 	if
 }
