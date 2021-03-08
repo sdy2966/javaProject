@@ -4,12 +4,12 @@ public class SmartPhone extends DmbPhone {
 
 	@Override
 	void powerOn() {
-		System.out.println("smatrÀü¿øÄÑ");
+		System.out.println("smartÀü¿øÄÑ");
 	}
 
 	@Override
 	void powerOff() {
-		System.out.println("smatr²¨");
+		System.out.println("smart²¨");
 	}
 
 }
