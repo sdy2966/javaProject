@@ -40,5 +40,5 @@ public class Member {
 //			}
 //
 //		}
-//		return false;
-//	} equals¿¹Á¦ ¿¬½À
+//return false;
+//} equalsï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
