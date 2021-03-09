@@ -2,13 +2,13 @@ package API;
 
 public class MemberCloneExa {
 	public static void main(String[] args) {
-		Member original = new Member("blue", "È«±æÀÌ", "12344", 25, true);//¿øº» °´Ã¼ »ı¼º
+		Member original = new Member("blue", "í™ê¸¸ì´", "12344", 25, true);//ì›ë³¸ ê°ì²´ ìƒì„±
 		
-		//º¹Á¦ °´Ã¼¸¦ ¾òÀº ÈÄ¿¡ ÆĞ½º¿öµå º¯°æ
+		//ë³µì œ ê°ì²´ë¥¼ ì–»ì€ í›„ì— íŒ¨ìŠ¤ì›Œë“œ ë³€ê²½
 		Member cloned = original.getMember();
 		cloned.password = "64536";
 				
-		System.out.println("[º¹Á¦ °´Ã¼ÀÇ ÇÊµå°ª]");
+		System.out.println("[ë³µì œ ê°ì²´ì˜ í•„ë“œê°’]");
 		System.out.println("id: "+ cloned.id);
 		System.out.println("name: " + cloned.name);
 		System.out.println("password: " + cloned.password);
@@ -17,7 +17,7 @@ public class MemberCloneExa {
 		
 		System.out.println();
 		
-		System.out.println("[º¹Á¦ °´Ã¼ÀÇ ÇÊµå°ª]");
+		System.out.println("[ë³µì œ ê°ì²´ì˜ í•„ë“œê°’]");
 		System.out.println("id: "+ original.id);
 		System.out.println("name: " + original.name);
 		System.out.println("password: " + original.password);

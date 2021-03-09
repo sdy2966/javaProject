@@ -1,7 +1,7 @@
 package hr;
 
 public class Department {
-	private int departmentId; // ¿À¶óÅ¬¿¡¼­´Â ´ë¼Ò¹®ÀÚ¸¦ ±¸ºĞÇÏÁö¾ÊÀ¸´Ï _¸¦ »ç¿ë
+	private int departmentId; // ì˜¤ë¼í´ì—ì„œëŠ” ëŒ€ì†Œë¬¸ìë¥¼ êµ¬ë¶„í•˜ì§€ì•Šìœ¼ë‹ˆ _ë¥¼ ì‚¬ìš©
 	private String departmentname;
 	private int managerid;
 	private int locationid;

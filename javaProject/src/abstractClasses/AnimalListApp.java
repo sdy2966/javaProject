@@ -13,46 +13,46 @@ public class AnimalListApp {
 
 		while (fd) {
 			System.out.println("---------------------------------------------------------------");
-			System.out.println("1.Ä£±¸ | 2. ÇĞ±³Ä£±¸ | 3.È¸»çÄ£±¸ | 4.ÀüÃ¼¸ñ·Ï | 5. Ä£±¸ÀÌ¸§°Ë»ö | 6.Á¾·á");
+			System.out.println("1.ì¹œêµ¬ | 2. í•™êµì¹œêµ¬ | 3.íšŒì‚¬ì¹œêµ¬ | 4.ì „ì²´ëª©ë¡ | 5. ì¹œêµ¬ì´ë¦„ê²€ìƒ‰ | 6.ì¢…ë£Œ");
 			System.out.println("---------------------------------------------------------------");
-			System.out.println("ÀÔ·Â>");
+			System.out.println("ì…ë ¥>");
 
 			int selectNo = scanner.nextInt();
 
 			if (selectNo == 1) {
-				System.out.println("ÀÌ¸§ÀÔ·Â> ");
+				System.out.println("ì´ë¦„ì…ë ¥> ");
 				String name = scanner.nextLine();
-				System.out.println("ÀüÈ­¹øÈ£> ");
+				System.out.println("ì „í™”ë²ˆí˜¸> ");
 				String pnum = scanner.nextLine();
 			} else if (selectNo == 2) {
-				System.out.println("ÀÌ¸§ÀÔ·Â> ");
+				System.out.println("ì´ë¦„ì…ë ¥> ");
 				String name = scanner.nextLine();
-				System.out.println("ÀüÈ­¹øÈ£> ");
+				System.out.println("ì „í™”ë²ˆí˜¸> ");
 				String pnum = scanner.nextLine();
-				System.out.println("ºÎ¼­Á¤º¸> ");
+				System.out.println("ë¶€ì„œì •ë³´> ");
 				String dept = scanner.nextLine();
-//				new ComFriend("±è¹ÎÁÖ", "01033335444", "ÃÑ¹«");
+//				new ComFriend("ê¹€ë¯¼ì£¼", "01033335444", "ì´ë¬´");
 
 			} else if (selectNo == 3) {
-				System.out.println("ÀÌ¸§ÀÔ·Â> ");
+				System.out.println("ì´ë¦„ì…ë ¥> ");
 				String name = scanner.nextLine();
-				System.out.println("ÀüÈ­¹øÈ£> ");
+				System.out.println("ì „í™”ë²ˆí˜¸> ");
 				String pnum = scanner.nextLine();
-				System.out.println("°úÁ¤º¸> ");
+				System.out.println("ê³¼ì •ë³´> ");
 				String dept = scanner.nextLine();	
-//				new UnivFriend("±è´Ùl", "0101234567", "¿ª»ç");
+//				new UnivFriend("ê¹€ë‹¤ë¦", "0101234567", "ì—­ì‚¬");
 			} else if (selectNo == 4) {
-				System.out.println("ÀüÃ¼¸ñ·Ï");
+				System.out.println("ì „ì²´ëª©ë¡");
 				System.out.println(FriendList.toString());
 			} else if (selectNo == 5) {
-				System.out.println("ÀÌ¸§°Ë»ö");
+				System.out.println("ì´ë¦„ê²€ìƒ‰");
 				String fn = scanner.nextLine();
 			} else if (selectNo == 6) {
 				fd = false;
 			}
 		}
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 	}
 }
-//Ãß°¡¹®Á¦. Scanner Å¬·¡½º..
-//1,Ä£±¸ 2.ÇĞ±³Ä£±¸ 3.È¸»çÄ£±¸ 4.ÀüÃ¼¸ñ·Ï 5.Ä£±¸ÀÌ¸§ °Ë»ö
+//ì¶”ê°€ë¬¸ì œ. Scanner í´ë˜ìŠ¤..
+//1,ì¹œêµ¬ 2.í•™êµì¹œêµ¬ 3.íšŒì‚¬ì¹œêµ¬ 4.ì „ì²´ëª©ë¡ 5.ì¹œêµ¬ì´ë¦„ ê²€ìƒ‰

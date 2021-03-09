@@ -11,11 +11,11 @@ public abstract  class Animal {
 		
 	}
 	public void showInfo() {
-		System.out.println("Á¾·ù´Â " + this.species + "ÀÔ´Ï´Ù");
+		System.out.println("ì¢…ë¥˜ëŠ” " + this.species + "ì…ë‹ˆë‹¤");
 	}
 	public void breathe() {
-		System.out.println("¼ûÀ»½¬´Ù");
+		System.out.println("ìˆ¨ì„ì‰¬ë‹¤");
 	}
-	public abstract void sound(); //Ãß»ó¸Ş¼Òµå-±â´ÉÀÌ ¾ø°í ¸Ş¼Òµå¸¸ Á¤ÀÇ.¾Ö´Ï¸ÖÀÌ¶ó´Â Å¬·¡½º¿¡¼­ »ó¼Ó¹Ş°í³­ ÈÄ ±â´ÉºÎ¿©.
+	public abstract void sound(); //ì¶”ìƒë©”ì†Œë“œ-ê¸°ëŠ¥ì´ ì—†ê³  ë©”ì†Œë“œë§Œ ì •ì˜.ì• ë‹ˆë©€ì´ë¼ëŠ” í´ë˜ìŠ¤ì—ì„œ ìƒì†ë°›ê³ ë‚œ í›„ ê¸°ëŠ¥ë¶€ì—¬.
 	 
 }

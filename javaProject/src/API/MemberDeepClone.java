@@ -17,13 +17,13 @@ public class MemberDeepClone {
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		//¸ÕÀú ¾èÀº º¹»ç¸¦ ÇØ¼­ name, age¸¦ º¹Á¦ÇÑ´Ù.
+		//ë¨¼ì € ì–•ì€ ë³µì‚¬ë¥¼ í•´ì„œ name, ageë¥¼ ë³µì œí•œë‹¤.
 		Member cloned = (Member) super.clone();
-		//scores¸¦ ±íÀº º¹Á¦ÇÑ´Ù.
+		//scoresë¥¼ ê¹Šì€ ë³µì œí•œë‹¤.
 		cloned.scores = Arrays.copyOf(this.scores, this.scores.length);
-		//car¸¦ ±íÀºº¹Á¦
+		//carë¥¼ ê¹Šì€ë³µì œ
 		cloned.car = new Car(this.car.model);
-		//±íÀº º¹Á¦µÈ Member°´Ã¼¸¦ ¸®ÅÏ
+		//ê¹Šì€ ë³µì œëœ Memberê°ì²´ë¥¼ ë¦¬í„´
 		return cloned;
 	}
 

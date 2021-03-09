@@ -1,10 +1,10 @@
 package hr;
 
 public class MainExe {
-	public static void main(String[] args) {//¸ÞÀÎ¸Þ¼Òµå
+	public static void main(String[] args) {//ë©”ì¸ë©”ì†Œë“œ
 		EmpDAO dao = new EmpDAO();
 		Department[] dmtList= dao.dmtList();
-		System.out.println("ºÎ¼­¹øÈ£°¡ 30ÀÌ»óÀÎ»õ·³");
+		System.out.println("ë¶€ì„œë²ˆí˜¸ê°€ 30ì´ìƒì¸ìƒˆëŸ¼");
 		for (Department dmt :dmtList) {
 			if(dmt != null && dmt.getDepartmentId() >=30) {
 				System.out.println(dmt.toString());

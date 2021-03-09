@@ -1,9 +1,7 @@
-package interfaces;
-
 public class RemotecontrolExe {
 
 	public static void main(String[] args) {
-		RemoteControl rc = new Television();// ±¸Çö´Ü°è¿¡ ÀÖ´À ÀÌ
+		RemoteControl rc = new Television();// êµ¬í˜„ë‹¨ê³„ì— ìˆëŠ ì´
 
 		rc.turnOn();
 		rc.setVolume(6);
@@ -19,18 +17,18 @@ public class RemotecontrolExe {
 
 			@Override
 			public void turnOn() {
-				System.out.println("dvdÄÑ");
+				System.out.println("dvdì¼œ");
 			}
 
 			@Override
 			public void turnOff() {
-				System.out.println("dvd²¨");
+				System.out.println("dvdêº¼");
 			}
 
 			@Override
 			public void setVolume(int volume) {
 				this.volume = volume;
-				System.out.println("dvd º¼·ı: " + volume);
+				System.out.println("dvd ë³¼ë¥¨: " + volume);
 			}
 		};
 		rc.turnOn();

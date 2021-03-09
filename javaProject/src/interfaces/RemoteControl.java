@@ -1,13 +1,13 @@
 package interfaces;
 
 public interface RemoteControl {
-	// interface¿¡¼­´Â static finalÀ» µû·Î ÁöÁ¤ÇÏÁö ¾Ê¾Æµµ ÀÚµ¿À¸·Î ÁöÁ¤µÊ.
-	static final int MAX_VOLUME = 10;//»ó¼ö <-> º¯¼ö
-	static final int MIX_VOLUME = 10;//»ó¼ö <-> º¯¼ö 
-	//ÇÊµå¸¸ ´Ş¶û ÁöÁ¤ ¸øÇÔ
-	 void turnOn();//Ãß»ó¸Ş¼Òµå(±¸Çö¾ÈÇÔ
+	// interfaceì—ì„œëŠ” static finalì„ ë”°ë¡œ ì§€ì •í•˜ì§€ ì•Šì•„ë„ ìë™ìœ¼ë¡œ ì§€ì •ë¨.
+	static final int MAX_VOLUME = 10;//ìƒìˆ˜ <-> ë³€ìˆ˜
+	static final int MIX_VOLUME = 10;//ìƒìˆ˜ <-> ë³€ìˆ˜ 
+	//í•„ë“œë§Œ ë‹¬ë‘ ì§€ì • ëª»í•¨
+	 void turnOn();//ì¶”ìƒë©”ì†Œë“œ(êµ¬í˜„ì•ˆí•¨
 	 void turnOff();
-	void setVolume(int volume);//»ı¼ºÀÚ
+	void setVolume(int volume);//ìƒì„±ì
 	
 	
 	

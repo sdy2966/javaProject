@@ -1,13 +1,10 @@
-package hr;
-
+package boardPkg.common;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
-public class DBUtil {
+public class DBCon {
 	static {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -29,20 +26,4 @@ public class DBUtil {
 		return conn;
 	}
 
-	public static void close(ResultSet rs, Statement stmt, Connection conn) {
-		try {
-			if (stmt != null) {
-				stmt.close();
-			}
-			if (conn != null) {
-				conn.close();
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-
-
-	}
-
-
+}

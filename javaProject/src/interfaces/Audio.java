@@ -1,17 +1,4 @@
-package interfaces;
-
-public class Audio implements RemoteControl {
-	int volume;
-
-	@Override
-	public void turnOn() {
-		System.out.println("¿Àµğ¿ÀÄÔ");
-
-	}
-
-	@Override
-	public void turnOff() {
-		System.out.println("¿Àµğ¿À²û");
+		System.out.println("ì˜¤ë””ì˜¤ë”");
 	}
 
 	@Override
@@ -23,7 +10,7 @@ public class Audio implements RemoteControl {
 		} else {
 			this.volume = volume;
 		}
-		System.out.println("ÇöÀç ¿Àµğ¿À º¼·ıÀº" + volume);
+		System.out.println("í˜„ì¬ ì˜¤ë””ì˜¤ ë³¼ë¥¨ì€" + volume);
 	}
 
 }

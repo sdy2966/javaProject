@@ -1,7 +1,7 @@
 package hr;
 
 public class Employee {
-	private int employeeId; // ¿À¶óÅ¬¿¡¼­´Â ´ë¼Ò¹®ÀÚ¸¦ ±¸ºĞÇÏÁö¾ÊÀ¸´Ï _¸¦ »ç¿ë
+	private int employeeId; // ì˜¤ë¼í´ì—ì„œëŠ” ëŒ€ì†Œë¬¸ìë¥¼ êµ¬ë¶„í•˜ì§€ì•Šìœ¼ë‹ˆ _ë¥¼ ì‚¬ìš©
 	private String firstname;
 	private String lastname;
 	private String email;

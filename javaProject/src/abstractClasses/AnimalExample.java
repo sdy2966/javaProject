@@ -2,14 +2,14 @@ package abstractClasses;
 
 public class AnimalExample {
 	public static void main(String[] args) {
-		//Animal animal = new Animal();Ãß»óÅ¬·¡½º´Â ÀÎ½ºÅÏ½º »ı¼º ºÒ°¡.
-	Animal animal = new Bird("Á¶·ù");
+		//Animal animal = new Animal();ì¶”ìƒí´ë˜ìŠ¤ëŠ” ì¸ìŠ¤í„´ìŠ¤ ìƒì„± ë¶ˆê°€.
+	Animal animal = new Bird("ì¡°ë¥˜");
 	animal.showInfo();
 	animal.breathe();
 	animal.sound();
 	
 	
-	animal = new Cat("Æ÷À¯·ù");
+	animal = new Cat("í¬ìœ ë¥˜");
 	animal.showInfo();
 	animal.breathe();
 	animal.sound();

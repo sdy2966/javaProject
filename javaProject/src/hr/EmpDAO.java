@@ -41,7 +41,7 @@ public class EmpDAO {
 		} finally {
 			DBUtil.close(rs, psmt, conn);
 		}
-			System.out.println("¸Þ¼Òµå È£Ãâ ¿Ï·á.");
+			System.out.println("ë©”ì†Œë“œ í˜¸ì¶œ ì™„ë£Œ.");
 		return Departments;
 	}
 
@@ -73,7 +73,7 @@ public class EmpDAO {
 		} finally {
 			DBUtil.close(rs, psmt, conn);
 		}
-		System.out.println("¸Þ¼Òµå È£Ãâ ¿Ï·á.");
+		System.out.println("ë©”ì†Œë“œ í˜¸ì¶œ ì™„ë£Œ.");
 		return employees;
 	}
 }

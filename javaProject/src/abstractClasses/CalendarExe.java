@@ -2,50 +2,50 @@ package abstractClasses;
 
 import java.util.Calendar;
 
-//´Ş·Â¸¸µé±â
+//ë‹¬ë ¥ë§Œë“¤ê¸°
 public class CalendarExe {
 	public static void main(String[] args) {
 		showCal(2021, 7);
 	}
-	public static void showCal(int year, int month) { // ÇØ´ç³â¿ùÀÇ ´Ş·ÂÀ» »ı¼ºÇØ¼­ º¸¿©ÁÖ´Â ¸Ş¼Òµå.
+	public static void showCal(int year, int month) { // í•´ë‹¹ë…„ì›”ì˜ ë‹¬ë ¥ì„ ìƒì„±í•´ì„œ ë³´ì—¬ì£¼ëŠ” ë©”ì†Œë“œ.
 
 		Calendar cal = Calendar.getInstance();
-		cal.set(year, month-1, 1);//1¿ù 0  2¿ù 1 3¿ù 2 4¿ù 3.....
+		cal.set(year, month-1, 1);//1ì›” 0  2ì›” 1 3ì›” 2 4ì›” 3.....
 		int lastDate = cal.getActualMaximum(Calendar.DATE);
 		int firstDay = cal.get(Calendar.DAY_OF_WEEK);// 
 
 		for (int i = 1; i < firstDay; i++) {
-			System.out.printf("%3s", " ");// "_" °ø¶õÀ» ÇÏ³ª µÚ·Î ¹Ğ¾îÁÜ
+			System.out.printf("%3s", " ");// "_" ê³µë€ì„ í•˜ë‚˜ ë’¤ë¡œ ë°€ì–´ì¤Œ
 		}
 		for (int i = 1; i <= lastDate; i++) {
 			System.out.printf("%3d", i);
-			if ((i + firstDay - 1) % 7 == 0) {//ÀÏ1 ¿ù2 È­3 ....+1¾¿
-				System.out.println();// ´ÙÀ½ÁÙ·Î ²÷±â
+			if ((i + firstDay - 1) % 7 == 0) {//ì¼1 ì›”2 í™”3 ....+1ì”©
+				System.out.println();// ë‹¤ìŒì¤„ë¡œ ëŠê¸°
 			}
 //					System.out.println(cal.get(Calendar.YEAR));
 //					System.out.println(cal.get(Calendar.MONTH));
 //					System.out.println(cal.get(Calendar.DAY_OF_MONTH));
 //					System.out.println(cal.get(Calendar.DAY_OF_WEEK));
-//					System.out.println(cal.getActualMaximum(Calendar.DATE));// ¿À´Ã³¯Â¥
+//					System.out.println(cal.getActualMaximum(Calendar.DATE));// ì˜¤ëŠ˜ë‚ ì§œ
 //					System.out.println("-------------------------------");
-//					cal.set(2021, 1, 1);// -³¯Â¥ÁöÁ¤ cal º¯¼ö°ª -> 2021³â 2¿ù 1ÀÏ	
+//					cal.set(2021, 1, 1);// -ë‚ ì§œì§€ì • cal ë³€ìˆ˜ê°’ -> 2021ë…„ 2ì›” 1ì¼	
 
 //		System.out.println(cal.get(Calendar.DAY_OF_WEEK));
-//		System.out.printf("%3d", 9);//d´Â ¼ıÀÚÅ¸ÀÔ
+//		System.out.printf("%3d", 9);//dëŠ” ìˆ«ìíƒ€ì…
 //		System.out.printf("%3d", 10);
-//		System.out.printf("%5s", "sun");//s´Â ¹®ÀÚÅ¸ÀÓ(string)
+//		System.out.printf("%5s", "sun");//sëŠ” ë¬¸ìíƒ€ì„(string)
 //		System.out.printf("%5s", "Monday");
 
 //		int lastDate = cal.getActualMaximum(Calendar.DATE);
-//		int firstDay = cal.get(Calendar.DAY_OF_WEEK);// ¿ù¿ç0
+//		int firstDay = cal.get(Calendar.DAY_OF_WEEK);// ì›”ìšœ0
 //		
 //		for (int i = 1; i < firstDay; i++) {
-//			System.out.printf("%3s", " ");// "_" °ø¶õÀ» ÇÏ³ª µÚ·Î ¹Ğ¾îÁÜ
+//			System.out.printf("%3s", " ");// "_" ê³µë€ì„ í•˜ë‚˜ ë’¤ë¡œ ë°€ì–´ì¤Œ
 //		}
 //		for (int i = 1; i <= lastDate; i++) {
 //			System.out.printf("%3d", i);
 //			if ((i + firstDay - 1) % 7 == 0) {//
-//				System.out.println();// ´ÙÀ½ÁÙ·Î ²÷±â
+//				System.out.println();// ë‹¤ìŒì¤„ë¡œ ëŠê¸°
 //			}
 //
 //		}

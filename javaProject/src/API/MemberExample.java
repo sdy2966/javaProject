@@ -6,16 +6,16 @@ public class MemberExample {
 		Member obj2 = new Member("blue");
 		Member obj3 = new Member("red");
 		
-		if(obj1.equals(obj2)) {//equals()¸Ş¼Òµå´Â ==¿¬»êÀÚ¿Í °°Àº ÀÇ¹Ì
-			System.out.println("obj1°ú obj2´Â µ¿µîÇÏ´Ù");
+		if(obj1.equals(obj2)) {//equals()ë©”ì†Œë“œëŠ” ==ì—°ì‚°ìì™€ ê°™ì€ ì˜ë¯¸
+			System.out.println("obj1ê³¼ obj2ëŠ” ë™ë“±í•˜ë‹¤");
 		} else {
-			System.out.println("obj1°ú obj2´Â µ¿µîÇÏÁö¾Ê´Ù");
+			System.out.println("obj1ê³¼ obj2ëŠ” ë™ë“±í•˜ì§€ì•Šë‹¤");
 		}
 		
 		if(obj1.equals(obj3)) {
-			System.out.println("obj1°ú obj3´Â µ¿µîÇÏ´Ù");
+			System.out.println("obj1ê³¼ obj3ëŠ” ë™ë“±í•˜ë‹¤");
 		} else {
-			System.out.println("obj1°ú obj3´Â µ¿µîÇÏÁö¾Ê´Ù");
+			System.out.println("obj1ê³¼ obj3ëŠ” ë™ë“±í•˜ì§€ì•Šë‹¤");
 		}
 		
 
