@@ -23,23 +23,7 @@ public class Member {
 		} catch (CloneNotSupportedException e) {
 			return cloned;
 		}
+		return cloned;
 	}
 }
-// public String id;
-//
-//	public Member(String id) {
-//		this.id = id;
-//	}
-//
-//	@Override
-//	public boolean equals(Object obj) {
-//		if (obj instanceof Member) { //https://improver.tistory.com/140
-//			Member member = (Member) obj;
-//			if (id.equals(member.id)) {
-//				return true;
-//			}
-//
-//		}
-//		return false;
-//	} equals예제 연습
-
+// p467
