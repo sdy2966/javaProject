@@ -2,9 +2,9 @@ package references;
 
 public class ArrayExample2 {
 	public static void main(String[] args) {
-		// 10°³ÀÇ ¹è¿­¿¡ 1~100²¥ÁöÀÇ ÀÓÀÇÀÇ ¼ö¸¦ Math.randomÀ¸·Î
+		// 10ê°œì˜ ë°°ì—´ì— 1~100êº„ì§€ì˜ ì„ì˜ì˜ ìˆ˜ë¥¼ Math.randomìœ¼ë¡œ
 		// 
-		// Â¦¼öÇÕÀ» ±¸ÇØ¼­ Æò±Õ±ÔÇÏ±â
+		// ì§ìˆ˜í•©ì„ êµ¬í•´ì„œ í‰ê· ê·œí•˜ê¸°
 		
 		int[] ary = new int[10];
 		int sum = 0;

@@ -11,12 +11,12 @@ enum Choice {
 public class EnumExample {
 	public static void main(String[] args) {
 		Week today = null;
-		today = Week.SUNDAY; //today = "Hello";´Â ¾ÈµÊ.
+		today = Week.SUNDAY; //today = "Hello";ëŠ” ì•ˆë¨.
 		Calendar cal = Calendar.getInstance();
-		System.out.println("³âµµ " + cal.get(Calendar.YEAR));
-		System.out.println("¿ù " + cal.get(Calendar.MONTH));
-		System.out.println("ÀÏ" + cal.get(Calendar.DAY_OF_MONTH));
-		System.out.println("¿äÀÏ"+ cal.get(Calendar.DAY_OF_WEEK));
+		System.out.println("ë…„ë„ " + cal.get(Calendar.YEAR));
+		System.out.println("ì›” " + cal.get(Calendar.MONTH));
+		System.out.println("ì¼" + cal.get(Calendar.DAY_OF_MONTH));
+		System.out.println("ìš”ì¼"+ cal.get(Calendar.DAY_OF_WEEK));
 	
 		int week = cal.get(Calendar.DAY_OF_WEEK);
 		switch(week) {
@@ -36,16 +36,16 @@ public class EnumExample {
 			today = Week.SATURDAY;break;
 		}
 		if(today == Week.SUNDAY || today == Week.SATURDAY) {
-//		if (week == 1 || week == 2) { // ÀÌ ±¸¹®º¸´Ù À§ÀÇ if ¤²±¸¹®ÀÌ Á» ´õ ÀÇ¹Ì¸¦ ¸íÈ®ÇÏ°Ô ¾Ë ¼ö ÀÖ°í À¯´ÏÅ© ÇÏ´Ù.
-			System.out.println("ÁÖ¸»¿¡´Â ¿©ÇàÀ» °©´Ï´Ù.");
+//		if (week == 1 || week == 2) { // ì´ êµ¬ë¬¸ë³´ë‹¤ ìœ„ì˜ if ã…‚êµ¬ë¬¸ì´ ì¢€ ë” ì˜ë¯¸ë¥¼ ëª…í™•í•˜ê²Œ ì•Œ ìˆ˜ ìˆê³  ìœ ë‹ˆí¬ í•˜ë‹¤.
+			System.out.println("ì£¼ë§ì—ëŠ” ì—¬í–‰ì„ ê°‘ë‹ˆë‹¤.");
 		} else {
-			System.out.println("ÁÖÁß¿¡´Â °øºÎ¸¦ ÇÕ´Ï´Ù.");
+			System.out.println("ì£¼ì¤‘ì—ëŠ” ê³µë¶€ë¥¼ í•©ë‹ˆë‹¤.");
 		}
 		Kind manOfWoman = Kind.FEMALE;
 		if(manOfWoman == Kind.MALE) {
-			System.out.println("³²");
+			System.out.println("ë‚¨");
 		} else if (manOfWoman == Kind.FEMALE) {
-			System.out.println("¿©¼ºÀÔ´Ï´Ù.");
+			System.out.println("ì—¬ì„±ì…ë‹ˆë‹¤.");
 		}
 		
 		

@@ -3,17 +3,17 @@ package references;
 public class EnumMethodExample {
 	public static void main(String[] args) {
 		
-		//name() ¸Ş¼Òµå
+		//name() ë©”ì†Œë“œ
 		Week today = Week.SUNDAY;
 		String name = today.name();
 		System.out.println(name);
 		
 		
-		//ordinal()¸Ş¼Òµå
+		//ordinal()ë©”ì†Œë“œ
 		int ordinal = today.ordinal();
 		System.out.println(ordinal);
 		
-		//compreTo()¸Ş¼Òµå
+		//compreTo()ë©”ì†Œë“œ
 		Week day1 = Week.MONDAY;
 		Week day2 = Week.WEDNESDAY;
 		int result1 = day1.compareTo(day2);
@@ -22,17 +22,17 @@ public class EnumMethodExample {
 		System.out.println(result2);
 		
 		
-		//value0f()¸Ş¼Òµå
+		//value0f()ë©”ì†Œë“œ
 		if(args.length == 1) {
 			String strDay = args[0];
 			Week weekDay = Week.valueOf(strDay);
 			if(weekDay == Week.SATURDAY || weekDay == Week.SUNDAY) {
-				System.out.println("ÁÖ¸»ÀÌ±º");
+				System.out.println("ì£¼ë§ì´êµ°");
 			} else { 
-				System.out.println("ÆòÀÏÀÌ±º");
+				System.out.println("í‰ì¼ì´êµ°");
 			}
 		}
-		//Values()¸Ş¼Òµå
+		//Values()ë©”ì†Œë“œ
 		Week[] days = Week.values();
 		for(Week day : days) {
 			System.out.println(day);

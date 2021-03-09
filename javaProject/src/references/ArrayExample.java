@@ -21,7 +21,7 @@ public class ArrayExample {
 		System.out.println(scores[1]);
 		scores[0] = 80;
 		scores[1] = 81;
-		System.out.println("º¯°æÈÄ");
+		System.out.println("ë³€ê²½í›„");
 		System.out.println(scores[0]);
 		System.out.println(scores[1]);
 		System.out.println("---------for---------");

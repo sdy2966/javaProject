@@ -2,8 +2,8 @@ package references;
 
 public class ArrayExample1 {
 	public static void main(String[] args) {
-		// intArys => 5°³ 
-		//for ¹Ýº¹¹®()
+		// intArys => 5ê°œ 
+		//for ë°˜ë³µë¬¸()
 		//Math.randam() * 10 + 1
 		int[] intArys = new int[5];
 		for (int i=0; i<intArys.length; i++) {
