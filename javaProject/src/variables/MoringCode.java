@@ -8,11 +8,11 @@ public class MoringCode {
 		int n2 = 28;
 		
 		if(n1 > n2) {
-			System.out.println("ÇÑÃ¢");
+			System.out.println("í•œì°½");
 		} else if(n1 == n2) {
-			System.out.println("Àû´çÇÑ³ªÀÌ");
+			System.out.println("ì ë‹¹í•œë‚˜ì´");
 		} else {
-			System.out.println("³ªÀÌ°¡ Á» µéÀ½");
+			System.out.println("ë‚˜ì´ê°€ ì¢€ ë“¤ìŒ");
 		}
 		
 	}
