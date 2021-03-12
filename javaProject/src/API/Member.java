@@ -26,4 +26,24 @@ public class Member {
 		return cloned;
 	}
 }
+<<<<<<< HEAD
 // p467
+=======
+// public String id;
+//
+//	public Member(String id) {
+//		this.id = id;
+//	}
+//
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (obj instanceof Member) { //https://improver.tistory.com/140
+//			Member member = (Member) obj;
+//			if (id.equals(member.id)) {
+//				return true;
+//			}
+//
+//		}
+//return false;
+//} equals���� ����
+>>>>>>> branch 'master' of https://github.com/sdy2966/javaProject.git
