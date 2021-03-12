@@ -1,4 +1,4 @@
-package references;
+package ref;
 
 import java.util.Calendar;
 enum Kind {

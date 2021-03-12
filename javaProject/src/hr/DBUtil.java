@@ -22,7 +22,7 @@ public class DBUtil {
 		String password = "hr";
 		Connection conn = null;
 		try {
-			conn = DriverManager.getConnection(url, id, password);
+			conn = DriverManager.getConnection(url, user, password);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -41,6 +41,8 @@ public class DBUtil {
 			e.printStackTrace();
 		}
 	}
+
+	
 
 
 	}

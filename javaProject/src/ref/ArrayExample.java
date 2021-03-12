@@ -1,4 +1,4 @@
-package references;
+package ref;
 
 public class ArrayExample {
 	public static void main(String[] args) {
