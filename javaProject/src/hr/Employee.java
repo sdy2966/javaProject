@@ -1,6 +1,6 @@
 package hr;
 
-public class Employee {
+public class Employee implements Comparable<Employee> { 
 	private int employeeId; // 오라클에서는 대소문자를 구분하지않으니 _를 사용
 	private String firstname;
 	private String lastname;
@@ -80,5 +80,8 @@ public class Employee {
 				+ email + ", phoneNumber=" + phoneNumber + ", hireDate=" + hireDate + ", jobId=" + jobId + ", salary="
 				+ salary + "]";
 	}
-
+	@Override
+	public int compareTo(Employee o) {
+		return this.firstname.compareTo(o.firstname);//-1은 오름차순, +1은 내림차순, 0은 동일
+	}
 }
