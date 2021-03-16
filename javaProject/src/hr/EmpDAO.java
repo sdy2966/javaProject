@@ -115,7 +115,7 @@ public class EmpDAO {
 	      }
 	      return list;
 	   }
-	public List<Employee> getEmapList() {
+	public List<Employee> getEmpList() {
 		String sql = "select * from emp_java";
 		List<Employee> list = new ArrayList<>();
 		Statement stmt = null;
@@ -172,4 +172,5 @@ public class EmpDAO {
 		return employees;
 	
 	}
+
 }
