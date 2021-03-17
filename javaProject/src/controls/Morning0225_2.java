@@ -3,32 +3,31 @@ package controls;
 public class Morning0225_2 {
 
 	public static void main(String[] args) {
-// 1) 11╨нем 30╠НаЖюг ╪Жюг гую╩ ╠╦го╣╣╥о for╧щ╨╧╧╝.
+// 1) 11О©╫О©╫О©╫О©╫ 30О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫о╣О©╫О©╫О©╫ forО©╫щ╨О©╫О©╫О©╫.
 // 		int sum = 0;
 //		for (int i = 11; i <= 30; i++) {
 //			sum = sum + i;
 //		}
 //		System.out.println(sum);
 
-//2) 11╟З 30ю╩ ╨╞╪Ж╥н ют╥б╧ч╬ф╪╜ гую╩ ╠╦го╢б for╧щ╨╧╧╝.
+//2) 11О©╫О©╫ 30О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫т╥б╧ч╬ф╪О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫о╢О©╫ forО©╫щ╨О©╫О©╫О©╫.
 		int sum = 0;
 		int n1 = 11;
 		int n2 = 30;
 		for (int i = n1; i <= n2; i++) {
 			sum = sum + i;
 		}
-		System.out.println("2) " + n1 + "~" + n2 + "╠НаЖ гу: " + sum);
+		System.out.println("2) " + n1 + "~" + n2 + "О©╫О©╫О©╫О©╫ О©╫О©╫: " + sum);
 	}
 
-// 3) 11╟З 30ю╩ ╦е╟Ё╨╞╪Ж╥с ╧ч╬ф╪╜ гую╩ ╠╦го╢б ╦ч╪р╣Е.
+// 3) 11О©╫О©╫ 30О©╫О©╫ О©╫е╟О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫ч╬ф╪О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫о╢О©╫ О©╫ч╪р╣О©╫.
 	public static int getSum(int fromValue, int toValue) {
 		int sum = 0;
-		int
-		int 
+	
 		for (int i = fromValue; i <= toValue; i++) {
 			sum += i; // sum = sum + i;
 		}
-		System.out.println("3) " + n1 + "~" + n2 + "╠НаЖ гу: " + sum);
+		System.out.println("3) " + n1 + "~" + n2 + "О©╫О©╫О©╫О©╫ О©╫О©╫: " + sum);
 		return 0;
 	}
 

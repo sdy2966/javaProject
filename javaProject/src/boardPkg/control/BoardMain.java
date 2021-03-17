@@ -40,7 +40,7 @@ public class BoardMain {
 				System.out.println("내용입력> ");
 				String content = scn.nextLine();
 				
-				Board board = new Bo ard(boardNo, null, content, null, null);
+				Board board = new Board(boardNo, null, content, null, null);
 				service.modifyBoard(board);
 
 			} else if (menu == 3) { // 삭제
