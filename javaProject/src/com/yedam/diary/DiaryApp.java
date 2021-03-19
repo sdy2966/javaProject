@@ -1,5 +1,7 @@
 package com.yedam.diary;
 
+import java.util.List;
+
 public class DiaryApp {
 	DAO dao;
 
@@ -52,10 +54,13 @@ public class DiaryApp {
 		case 수정: update(); break;
 		case 삭제: delete(); break;
 		case 전체조회: selectAll(); break;
+		case 날짜검색: selectDate(); break;
+		case 내용검색: selectContent(); break;
 		}
 
 	}
 
+	
 	// 종료
 	public void exit() {
 		System.out.println("종료선택>> ");
@@ -104,8 +109,31 @@ public class DiaryApp {
 	public void selectAll() {
 		System.out.println("전체조회선택>> ");
 		for(DiaryVo vo : dao.selectAll()) {
-			System.out.println(vo.getWdate());
-			System.out.println(vo.getContent());
+			print(vo);
 		}
+	}
+	//날짜로 검색
+	public void selectDate() {
+		System.out.println("날짜검색>> ");
+		System.out.println("날짜:[yyMMdd]");
+		String Wdate = StdInputUtil.readDate();//내가쓴거
+		DiaryVo vo = dao.selectDate(Wdate);//dlqfurgksrjckw
+		print(vo);
+	}
+	
+	public void selectContent() {
+		System.out.println("내용검색>> ");
+		String contents = StdInputUtil.readCon();
+		List<DiaryVo> vo = dao.selectContent(contents);
+		for(DiaryVo con : vo) {
+			print(con);
+		}
+}
+	
+	public void print(DiaryVo vo) {
+		System.out.println("날짜는 : " + vo.getWdate());
+		System.out.println("내용은 : " + vo.getContent());
+		System.out.println("=========================================");
+		
 	}
 }// end of class

@@ -6,7 +6,11 @@ public class DiaryVo implements Serializable{
 		private final long serialVersionUID = 1L;
 		private String wdate;
 		private String content;
-
+		
+		public DiaryVo() {
+			
+		}
+		
 		public DiaryVo(String wdate, String content) {
 			super();
 			this.wdate = wdate;
@@ -25,7 +29,6 @@ public class DiaryVo implements Serializable{
 			this.content = content;
 		}
 		
-		public DiaryVo() {}
 		
 		@Override
 		public String toString() {

@@ -2,9 +2,12 @@ package com.yedam.diary;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
@@ -80,15 +83,12 @@ public class DiaryListDAO implements DAO {
 	@Override
 	public void update(DiaryVo vo) {	
 		int cnt = list.size();
-		for (int i = 0; i < list.size(); i++) {
-			if (list.set(i, vo).setWdate().equals(vo)) {
-				break;
+		for (int i = 0; i < cnt; i++) {
+			if (list.get(i).getWdate().equals(vo.getWdate())) {
+				list.set(i, vo);
+//				list.get(i).setContent(vo.getContent());
 			}
 		}
-		list.add(vo);
-		writeFile();
-		return;
-
 	}
 
 	@Override
@@ -106,14 +106,30 @@ public class DiaryListDAO implements DAO {
 
 	@Override
 	public DiaryVo selectDate(String date) {
-		return null;
+		int cnt = list.size();
+		DiaryVo con = null;
+		for (int i = 0; i < cnt; i++) {
+			if(list.get(i).getWdate().equals(date)) {
+				con = list.get(i);
+			}
+		}
+			
+		return con;
 	}
-
-	@Override
-	public List<DiaryVo> selectContent(String content) {
-		return null;
+	
+		@Override
+		public List<DiaryVo> selectContent(String content) {
+			int cnt = list.size();
+			List<DiaryVo> vo = new ArrayList<>();
+			for (int i = 0; i< cnt; i++) {
+				if(list.get(i).getContent().indexOf(content) != -1) {
+					vo.add(list.get(i));
+				}
+			}
+			
+			return vo;
+		
 	}
-
 	@Override
 	public List<DiaryVo> selectAll() {
 		return list;
