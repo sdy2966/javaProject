@@ -4,9 +4,11 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
-import boardPkg.common.DBCon;
-import boardPkg.model.Board;
+//import boardPkg.common.DBCon;
+//import boardPkg.model.Board;
 
 public class BoardDAO {
 	Connection conn = null;
@@ -16,7 +18,7 @@ public class BoardDAO {
 
 	public void close() {
 		if (rs != null) {
-			try { // /예외처리
+			try { // /?��?��처리
 				rs.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -24,14 +26,14 @@ public class BoardDAO {
 		}
 		if (stmt != null) {
 
-			try { // /예외처리
+			try { // /?��?��처리
 				stmt.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
 		}
 		if (conn != null) {
-			try { // /예외처리
+			try { // /?��?��처리
 				conn.close();				
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -39,14 +41,14 @@ public class BoardDAO {
 		}
 	}
 
-	// 전체 리스트
+	// ?���? 리스?��
 	public Board[] selectBoards() {
 		sql = "select * from board order by board_no desc";
 		conn = DBCon.getConnection();
 		Board[] boards = new Board[100];
 		int i = 0;
 
-		try { // 예외처리
+		try { // ?��?��처리
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);
 			while (rs.next()) {
@@ -62,10 +64,10 @@ public class BoardDAO {
 			}
 
 		} catch (SQLException e) {
-			System.out.println("조회중 에러발생");
+			System.out.println("조회중 에러 발생");
 //			e.printStackTrace();
 		} finally {
-			// 정상처리/ 예외발생 -> 항상 실행해야 할 내용이 있으면 구현
+			// ?��?��처리/ ?��?��발생 -> ?��?�� ?��?��?��?�� ?�� ?��?��?�� ?��?���? 구현
 			close();
 		}
 
@@ -73,7 +75,7 @@ public class BoardDAO {
 
 	}
 
-	// 한건조회
+	// 1건조회
 	public Board selectBoard(int boardNo) {
 		sql = "select * from board where board_no =" + boardNo;
 		conn = DBCon.getConnection();
@@ -97,7 +99,7 @@ public class BoardDAO {
 
 	}
 
-	// 입력
+	// ?��?��
 	public void insertBoard(Board board) {
 		conn = DBCon.getConnection();
 		sql = "insert into board values("+ board.getBoardNo() + ",'" + board.getTitle() + "'" + ",'"
@@ -105,7 +107,7 @@ public class BoardDAO {
 		try {
 			stmt = conn.createStatement();
 			int r = stmt.executeUpdate(sql);
-			System.out.println(r + "건 입력되었습니다.");
+			System.out.println(r + "건 입력");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
@@ -113,30 +115,30 @@ public class BoardDAO {
 		}
 	}
 
-	// 수정
+	// ?��?��
 	public void updateBoard(Board board) {
 		conn = DBCon.getConnection();
 		sql = "update board set content ="+"'"+ board.getContent() + "'" +"where board_no ="+ board.getBoardNo();
 		try {
 			stmt = conn.createStatement();
 			int r = stmt.executeUpdate(sql);
-			System.out.println(r + "건 수정되었습니다.");
+			System.out.println(r + "건 수정완료");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
 			close();
 		}
+	}		
+			
 
-	}
-
-	// 삭제
+	// ?��?��
 	public void deleteBoard(Board board) {
 		conn = DBCon.getConnection();
 		sql = "delete from board where board_no ="+ board.getBoardNo();
 		try {
 			stmt = conn.createStatement();
 			int r = stmt.executeUpdate(sql);
-			System.out.println(r + "건 수정되었습니다.");
+			System.out.println(r + "삭제...?");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
